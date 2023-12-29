@@ -17,13 +17,13 @@ import companyimgfive from '../assets/14.png';
 import companyimgsix from '../assets/15.png';
 
 
-export default function Home(){
+export default function Home(user){
     const navigate = useNavigate();
     const handleCTAClick = () => {
-        if(user){
-            // navigate to products page
+        if(user){ 
+            navigate('/products');
         }else{
-            navigate('/login')
+            navigate('/login');
         }
     }
     return(
