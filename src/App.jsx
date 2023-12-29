@@ -8,6 +8,7 @@ import Logo from './assets/7.png';
 import Home from './components/Home';
 import Login from './components/Login';
 import ProductGallary from './components/ProductGallary';
+import Productdetails from './components/Productdetails';
 import Signup from './components/Signup';
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
       <Route path='/Login' element={<Login setUser={setUser}/>}/>
       <Route path='/Signup' element={<Signup setUser = {setUser}/>}/>
       <Route path='/products' element={<ProductGallary/>}/>
+      <Route path='/product/:id' element={<Productdetails/>}/>
+
 
     </Routes>
    
